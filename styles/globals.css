@@ -12,18 +12,18 @@
         color: #354358;
     }
     .btn-email-sidebar {
-        @apply w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none
+        @apply w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none;
     }
     .bg-white-toggle-black {
-        @apply bg-white dark:bg-black-500
+        @apply bg-white dark:bg-black-500;
     }
     .bg-gray-toggle-black-200 {
-        @apply bg-gray-200 dark:bg-black-200
+        @apply bg-gray-200 dark:bg-black-200;
     }
     .shadow-light-toggle-dark {
-        @apply shadow-custom-light dark:shadow-custom-dark
+        @apply shadow-custom-light dark:shadow-custom-dark;
     }
     .project-icon-link {
-        @apply flex items-center px-4 space-x-3 text-lg
+        @apply flex items-center px-4 space-x-3 text-lg;
     }
 }

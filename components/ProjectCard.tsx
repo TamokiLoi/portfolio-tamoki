@@ -1,7 +1,8 @@
-import { FunctionComponent, useState } from "react"
-import { AiFillGithub, AiFillProject } from "react-icons/ai"
-import { MdClose } from "react-icons/md"
-import { IProject } from "../types"
+import Image from 'next/image';
+import { FunctionComponent, useState } from "react";
+import { AiFillGithub, AiFillProject } from "react-icons/ai";
+import { MdClose } from "react-icons/md";
+import { IProject } from "../types";
 
 const ProjectCard: FunctionComponent<{ project: IProject }> = ({
     project: {
@@ -20,20 +21,34 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
 
     return (
         <div>
-            <img src={image_path} alt={name} className="cursor-pointer" onClick={() => setShowDetail(true)} />
+            <Image
+                width={300}
+                height={150}
+                src={image_path}
+                alt={name}
+                layout="responsive"
+                quality={10}
+                className="cursor-pointer"
+                onClick={() => setShowDetail(true)} />
             <p className="my-2 text-center">{name}</p>
 
             {
                 showDetail &&
                 <div className="absolute top-0 left-0 z-10 grid w-full h-auto text-black bg-gray-100 dark:text-white dark:bg-black-100 md:grid-cols-2 gap-x-12">
                     <div>
-                        <img src={image_path} alt={name} />
+                        <Image
+                            width={300}
+                            height={150}
+                            src={image_path}
+                            alt={name}
+                            className="overflow-hidden"
+                            layout="responsive" />
 
                         <div className="flex justify-center my-4 space-x-3">
-                            <a href={github_url} className="project-icon-link bg-gray-toggle-black-200">
+                            <a href={github_url} className="project-icon-link bg-gray-toggle-black-200" target="_blank">
                                 <AiFillGithub /> <span>Github</span>
                             </a>
-                            <a href={deployed_url} className="project-icon-link bg-gray-toggle-black-200">
+                            <a href={deployed_url} className="project-icon-link bg-gray-toggle-black-200" target="_blank">
                                 <AiFillProject /> <span>Project</span>
                             </a>
                         </div>

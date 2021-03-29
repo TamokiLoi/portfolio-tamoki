@@ -1,8 +1,9 @@
+import { useTheme } from "next-themes";
+import Image from 'next/image';
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillSkype } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
-import { useTheme } from "next-themes";
 
 const Sidebar = () => {
 
@@ -14,12 +15,14 @@ const Sidebar = () => {
 
     return (
         <div>
-            <img
-                width="128px"
-                height="128px"
+            <Image
+                width={128}
+                height={128}
                 src="https://avatars.githubusercontent.com/u/27203631?s=400&u=bc8dba57035403dce86c1bc658723fa4e4deac60&v=4"
-                alt="user avatar"
-                className="w-32 h-32 mx-auto border rounded-full"
+                alt="avatar"
+                layout="intrinsic"
+                quality={100}
+                className="mx-auto border rounded-full"
             />
             <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
                 <span className="text-green">Tamoki </span>
@@ -29,8 +32,7 @@ const Sidebar = () => {
             <a
                 className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-gray-toggle-black-200"
                 href=""
-                download="name"
-            >
+                download="name">
                 <GiTie className="w-6 h-6" /> Download Resume
 			</a>
 
@@ -41,8 +43,7 @@ const Sidebar = () => {
                 </a>
                 <a
                     href="https://www.linkedin.com/in/nguyen-lam-thanh-loi-858416141/"
-                    target="_blank"
-                >
+                    target="_blank">
                     <AiFillLinkedin className="w-8 h-8" />
                 </a>
                 <a href="https://join.skype.com/invite/hhqrK60NYQB1" target="_blank">
