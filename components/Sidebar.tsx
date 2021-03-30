@@ -31,8 +31,8 @@ const Sidebar = () => {
             <p className="px-2 py-1 my-3 rounded-full bg-gray-toggle-black-200">Web Developer</p>
             <a
                 className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-gray-toggle-black-200"
-                href=""
-                download="name">
+                href="/assets/Nguyen-Lam-Thanh-Loi-Resume.pdf"
+                download="Tamoki Loi Resume.pdf">
                 <GiTie className="w-6 h-6" /> Download Resume
 			</a>
 

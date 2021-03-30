@@ -9,7 +9,7 @@ export const services: IService[] = [
     {
         Icon: RiComputerLine,
         title: "Frontend Development",
-        about: "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+        about: "I can build a scalable SPA using <b> HTML</b>, <b>CSS</b> with <b>Angular</b>, <b>React.js</b>, <b>Vue.js</b> ",
     },
     {
         Icon: FaServer,
@@ -19,39 +19,34 @@ export const services: IService[] = [
     {
         Icon: AiOutlineApi,
         title: "API Development",
-        about: "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+        about: "I can develop robust  REST API using <b>Node API</b> ",
     },
-    {
-        Icon: MdDeveloperMode,
-        title: "Competitive Coder",
-        about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
-    },
-    {
-        Icon: AiOutlineAntDesign,
-        title: "UI/UX designer",
-        about: "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
-    },
-    {
-        Icon: RiComputerLine,
-        title: "Whatever",
-        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
-    },
+    // {
+    //     Icon: MdDeveloperMode,
+    //     title: "Competitive Coder",
+    //     about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    // },
+    // {
+    //     Icon: AiOutlineAntDesign,
+    //     title: "UI/UX designer",
+    //     about: "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+    // },
+    // {
+    //     Icon: RiComputerLine,
+    //     title: "Whatever",
+    //     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    // },
 ];
 
 export const languages: ISkill[] = [
     {
         Icon: BsCircleFill,
-        name: "Python",
-        level: "45",
-    },
-    {
-        Icon: BsCircleFill,
         name: "Java Script",
-        level: "60",
+        level: "70",
     },
     {
         Icon: BsCircleFill,
-        name: "React Native",
+        name: "Angular",
         level: "80",
     },
     {
@@ -61,36 +56,51 @@ export const languages: ISkill[] = [
     },
     {
         Icon: BsCircleFill,
-        name: "Django",
-        level: "80",
+        name: "Vue",
+        level: "50",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Next.js",
+        level: "70",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Node.js",
+        level: "60",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "PHP",
+        level: "60",
     },
     {
         Icon: BsCircleFill,
         name: "Bootstrap",
-        level: "80",
+        level: "70",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Tailwindcss",
+        level: "50",
     },
 ];
 
 export const tools: ISkill[] = [
     {
         Icon: BsCircleFill,
-        name: "Figma",
-        level: "85",
-    },
-    {
-        Icon: BsCircleFill,
-        name: "Photoshop",
-        level: "45",
-    },
-    {
-        Icon: BsCircleFill,
-        name: "Illustrator",
+        name: "Visual Studio Code",
         level: "60",
     },
     {
         Icon: BsCircleFill,
-        name: "Framer",
-        level: "45",
+        name: "Sublime Text",
+        level: "60",
+    },
+    {
+        Icon: BsCircleFill,
+        name: "Photoshop",
+        level: "50",
     },
 ];
 
