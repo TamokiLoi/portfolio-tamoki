@@ -32,4 +32,7 @@ export type Category =
     | "django"
     | "express"
     | "ml"
-    | "vanilla";
+    | "vanilla"
+    | "nextjs"
+    | "golang"
+    ;
