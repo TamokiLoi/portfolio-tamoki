@@ -52,9 +52,12 @@ const ProjectCard: FunctionComponent<{
                             </motion.div>
 
                             <motion.div variants={fadeInUp} className="flex justify-center my-4 space-x-3">
-                                <a href={github_url} className="project-icon-link bg-gray-toggle-black-200" target="_blank">
-                                    <AiFillGithub /> <span>Github</span>
-                                </a>
+                                {
+                                    github_url &&
+                                    <a href={github_url} className="project-icon-link bg-gray-toggle-black-200" target="_blank">
+                                        <AiFillGithub /> <span>Github</span>
+                                    </a>
+                                }
                                 <a href={deployed_url} className="project-icon-link bg-gray-toggle-black-200" target="_blank">
                                     <AiFillProject /> <span>Project</span>
                                 </a>

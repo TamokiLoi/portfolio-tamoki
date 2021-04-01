@@ -29,9 +29,11 @@ const ProjectsNavbar: FunctionComponent<{ handleFilterCategory: Function, active
         <div className="flex px-3 py-2 space-x-3 overflow-x-scroll list-none">
             <NavItem value="all" {...props} />
             <NavItem value="react" {...props} />
-            <NavItem value="mongo" {...props} />
+            <NavItem value="nextjs" {...props} />
+            <NavItem value="golang" {...props} />
+            {/* <NavItem value="mongo" {...props} />
             <NavItem value="django" {...props} />
-            <NavItem value="node" {...props} />
+            <NavItem value="node" {...props} /> */}
         </div>
     )
 }
