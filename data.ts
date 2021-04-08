@@ -108,7 +108,7 @@ export const projects: IProject[] = [
     {
         id: 0,
         name: "WhatsApp Clone",
-        description:"This app clone from WhatsApp.",
+        description:"This app clone from WhatsApp with feature basic.",
         image_path: "/images/whatsapp-clone.png",
         deployed_url: "https://whats-app-clone-7d3de.web.app",
         github_url: "https://github.com/TamokiLoi/whatsapp-clone",
@@ -117,6 +117,16 @@ export const projects: IProject[] = [
     },
     {
         id: 1,
+        name: "Amazon Clone",
+        description:"This app clone from Amazon with feature basic.",
+        image_path: "/images/amazon-clone.png",
+        deployed_url: "https://clone-a437c.web.app/",
+        github_url: "https://github.com/TamokiLoi/amazon-clone-react",
+        category: ["react"],
+        key_techs: ["React", "Material UI", "React Router", "React Context API", "Stripe", "Google Authentication", "Firebase DB & Functions"],
+    },
+    {
+        id: 2,
         name: "Read Manga Online",
         description:"This app provides an online comic reading feature.",
         image_path: "/images/read-manga-online.png",
